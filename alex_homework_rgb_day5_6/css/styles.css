@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    
+    
+}
+
+nav a:link {
+    padding: 20px;
+    flex-grow: 1;
+    color: red;
+    font-family: 'VT323', monospace;
+    font-size: 40px;
+    text-decoration: none;
+    text-align: center;
+    transition: all .4s;
+    
+}
+
+nav a:visited {
+    color: white:
+}
+
+nav a:hover {
+    background: lime;
+    color: blue;
+    
+}
+
+#bgvid {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+    /*
+    right: 0;
+    bottom: 0;
+    
+*/
+    
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    background: url(../images/clouds.jpg) no-repeat;
+    background-size: cover;
+}
+
+
+#gallery {
+    width:100%;
+    min-height: 110vh;
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    padding-top: 150px;
+    
+    
+}
+
+#gallery figure {
+    position: relative;
+    width:300px;
+    height:300px;
+    margin: 20px;
+    box-shadow: 10px 10px 5px rgba(255,255,255,.6);
+    transition: all .3s;
+    color: white;
+    text-align: center;
+    
+    
+}
+
+#gallery figure:hover {
+    box-shadow: 10px 10px 10px rgba(255,0,0,.6);
+    width:350px;
+    height:350px;
+    
+}
+
+#f1{
+    background-color: red;
+}
+
+#f1:hover {
+    background: url(/images/rgb.jpg);
+}
+
+#f2{
+    background-color: lime;
+}
+
+#f2:hover {
+    background: url(/images/rgb.jpg);
+}
+
+#f3{
+    background-color: blue;
+}
+
+#f3:hover {
+    background: url(/images/rgb.jpg);
+}
+
+
+figure h1{
+    font-family: 'VT323', monospace;
+    font-size: 42px;
+    text-shadow: 5px 5px 20px rgba(0,0,0,.6);
+    position: absolute;
+    top: 20px;
+    left 0;
+    width: 100%;
+    transition:all .3s;
+    
+}
+
+figure:hover h1{
+    top: 150px;
+    
+    /*top: 50px;
+    transform: translateY(-50%);*/
+    
+}
+
+figure figcaption {
+    background: rgba(0,0,0, .5);
+    font-family: 'VT323', monospace;
+    padding: 20px;
+    position: absolute;
+    bottom: 80px;
+    left:0;
+    transition:all .6s
+}
+
+figure:hover figcaption {
+    bottom:0;
+    
+}
+
+
+#anim {
+    width: 100px;
+    height: 100px;
+    background: white;
+    display: block;
+    position: absolute;
+    right: 100px;
+    top: 750px;
+}
+
+#anim:hover {
+    animation: rotateThis 2s 4 linear;
+}
+    
+@keyframes rotateThis {
+    0% {transform: rotate(0deg); background: white}
+    25% {background: red; }
+    50% {background: lime; }
+    75% {background: blue; }
+    100% {transform: rotate(360deg); background: white}
+
+}
+
+h1 {
+    font-family: 'VT323', monospace;
+    color: white;
+    font-size: 120px;
+    position: relative;
+   /* top: 20px; */
+    animation: slider 4s;
+    
+}
+
+@keyframes slider {
+    from {opacity: 0; left: 300px;}
+    to {opacity: 1; left: 20px;}
+}
+
+
+
+
+
+
+
+
+
+
+
+    

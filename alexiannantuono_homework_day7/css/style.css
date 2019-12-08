@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:400,700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    background: #254029;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    z-index: 1;
+    
+    
+}
+
+nav a:link {
+    padding: 20px;
+    flex-grow: 1;
+    color: antiquewhite;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    text-decoration: none;
+    text-align: center;
+    transition: all .4s;
+    
+}
+
+nav a:hover {
+    background: antiquewhite;
+    color: #254029;
+    
+}
+
+#section1 {
+    
+    width: 100%;
+    height:  70vh;
+    background: url(../images/greenmarble.jpg) no-repeat fixed center center;
+    background-size: cover;
+    display: flex;
+    /* justify content for horizontal alignment*/
+    justify-content: center;
+    /* align items for vertical alignment*/
+    align-items: center;
+    border: 10px solid #254029;
+    
+}
+
+#section1 hgroup {
+    
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+    font-size: 25px;
+    color: #254029;
+    background:rgba(256, 256, 256, .75);
+    padding: 50px 50px;
+    text-align: center;
+    border-radius: 10px;
+
+}
+
+section#elements {
+	width:100%;
+	min-height:100vh;
+    height: auto;
+	border:solid 10px #254029;
+	display: flex;  
+    flex-flow: row wrap;
+}
+
+#elements article {
+/*	flex:1 100%;*/
+    width:100%;
+	border:solid #254029 10px;
+	font-family: 'Oswald', sans-serif;
+    font-weight: 400;
+	font-size: 22px;
+	color:#254029;
+	padding:20px;
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+/* ===== TABLET LAYOUT ===== */
+/* 600px to 1024px. Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 600px) {
+    h1 {
+        font-size: 36px;
+    }
+    #elements article {
+	    width:50%;
+	}
+    
+    #section1 hgroup {
+    position:absolute;
+    bottom:400px;
+    right:0;
+     }
+}
+
+/* ===== DESKTOP LAYOUT ===== */
+/* 1024px OR HIGHER Inherits styles from: Mobile Layout. */
+
+@media only screen and (min-width: 1024px) {
+    h1 {
+        font-size: 42px;
+    }
+    #elements {
+        align-items: baseline;
+        align-content: center;
+    }
+    #elements article {
+	    width:25%;
+	}
+    
+    
+}
+
+
