@@ -1,0 +1,156 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#gallery {
+    width:100%;
+    min-height: 100vh;
+    height: auto;
+    background: #EEE9DA;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-content: center;
+    
+}
+
+#gallery figure {
+    position: relative;
+    width:300px;
+    height:400px;
+    /*background: coral;*/
+    margin: 20px;
+    box-shadow: 0 0 5px rgba(0,0,0,.6);
+    transition: all .3s;
+    color: white;
+    text-align: center;
+    
+}
+
+#gallery figure:hover {
+    box-shadow: 10px 10px 10px rgba(0,0,0,.6);
+    
+}
+
+#f1{
+    background: url(../images/bg1.jpg) no-repeat center center;
+}
+
+#f1:hover {
+    background: url(../images/bg1.jpg) no-repeat right center;
+}
+
+#f2{
+    background: url(../images/bg2.jpg) no-repeat center center;
+}
+
+#f2:hover {
+    background: url(../images/bg2.jpg) no-repeat right center;
+}
+
+#f3{
+    background: url(../images/bg3.jpg) no-repeat center center;
+}
+
+#f3:hover {
+    background: url(../images/bg3.jpg) no-repeat right center;
+}
+
+#f4{
+    background: url(../images/bg4.jpg) no-repeat center center;
+}
+
+#f4:hover {
+    background: url(../images/bg4.jpg) no-repeat right center;
+}
+
+figure h1{
+    font-family: gotham, helvetiva, sans-serif;
+    font-size: 42px;
+    text-shadow: 0 0 30px rgba(0,0,0,.6);
+    position: absolute;
+    top: 20px;
+    left 0;
+    width: 100%;
+    transition:all .1s;
+    
+}
+
+figure:hover h1{
+    top: 100px;
+    
+    /*top: 50px;
+    transform: translateY(-50%);*/
+    
+}
+
+figure figcaption {
+    background: rgba(0,0,0,.6);
+    padding: 20px;
+    font-style: italic;
+    position: absolute;
+    bottom: -150px;
+    left:0;
+    transition:all .3s
+}
+
+figure:hover figcaption {
+    bottom:0;
+    
+}
+
+/* =============CSS ANIMATION EXAMPLE=============*/
+
+header h1 {
+    font-family: gotham, helvetica, sans-serif;
+    font-size: 72px;
+    position: relative;
+    left: 20px;
+   /* top: 20px; */
+    left: 20px;
+    animation: slider 1s;
+    
+}
+
+@keyframes slider {
+    from {opacity: 0; left: 300px;}
+    to {opacity: 1; left: 20px;}
+}
+
+/*=======CSS ANIMATION TRIGGERED BY :HOVER PSEUDO CLASS=====*/
+
+#anim {
+    width: 100px;
+    height: 100px;
+    background: orange;
+    display: block;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+}
+
+#anim:hover {
+    animation: rotateThis 1s 1 linear;
+}
+    
+@keyframes rotateThis {
+    0% {transform: rotate(0deg); background: orange}
+    25% {background: crimson;}
+    50% {background: cadetblue;}
+    75% {background: green;}
+    100% {transform: rotate(360deg); background: orange}
+}
+
+
+
+
+
+
+
+
+
+
+
+    
